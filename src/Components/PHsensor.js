@@ -10,7 +10,7 @@ const Phsensor=({Name="Ph Sensor",
 })=> {
     
   return (
-    <div className='mainCont'>
+    <div className='mainCont' style={{marginBottom:50}}>
     <div className='SensorCard'>
     <div className='mainDiv'>
         <div className='head'>

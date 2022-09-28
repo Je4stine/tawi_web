@@ -9,6 +9,7 @@ import {
   Link,
   Routes
 } from "react-router-dom";
+import Rename from './Components/Screens/Rename';
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path ="/" element={<Login/>}/>
         <Route path ="/DashBoard" element={<DashBoard/>}/>
         <Route path ="/Sensors" element={<Sensors/>}/>
+        <Route path ="/Rename" element={<Rename/>}/>
       </Routes>
     </Router>
   );

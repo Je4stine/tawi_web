@@ -1,9 +1,13 @@
 import React from 'react';
 import './Data.css';
 
-const Data =({Name="Set Intervals"}) =>{
+const Data =({Name="Set Intervals", func}) =>{
+
+  function func (){
+
+  }
   return (
-    <div className='DButton'>
+    <div className='DButton' onClick={func}>
         {Name}
     </div>
   )

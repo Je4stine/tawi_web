@@ -1,43 +1,57 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import Background from '../../assets/background.jpg';
 import Logo from '../../assets/logo.png'
 import './Login.css';
-import { Auth } from 'aws-amplify';
 import {  useNavigate } from "react-router-dom";
-import { MutatingDots } from  'react-loader-spinner'
+import { MutatingDots } from  'react-loader-spinner';
+import * as mutations from '../../graphql/mutations';
+import {API, graphqlOperation, Auth} from 'aws-amplify';
+import {useLocation} from 'react-router-dom';
+import { AppContext } from '../../AppContext';
 // import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 
-function Login() {
+function Rename() {
 
 
-    const navigate= useNavigate()
+    const navigate= useNavigate();
+    const location = useLocation();
     const [userData, setUserData]=useState({});
     const [loading, setLoading]=useState(false);
+    const {currentCode, setCurrentCode}=useContext(AppContext);
 
-    const [user, setUser]=useState('')
+  
     const handleChange =(event)=>{
         const name = event.target.name;
         const value = event.target.value;
         setUserData(values=>({...values, [name]:value}))
+    };
+
+
+    async function signIn (event){
+      event.preventDefault();
+      const qrcode = currentCode;
+      const {alias} = userData;
+      try{
+        await API.graphql(
+          graphqlOperation(mutations.updateAppData ,{
+            input:{qrcode:qrcode, alias: alias}
+          })
+        );
+        navigate(-1);
+        console.log(qrcode);
+          
+      }catch(err){
+        console.log(err)
+      }
     }
 
 
 
-    async function signIn(event) {
-        event.preventDefault();
-        setLoading(true)
-        const { username, password } = userData;
-        try {
-           const user = await Auth.signIn(username, password);
-            navigate("/DashBoard")
-            setLoading(false)
-        } 
-        catch (e) {
-          alert(e);
-          setLoading(false)
-        }
-    }
+    // async function signIn(event) {
+    //     event.preventDefault();
+    //    console.log("Rename yaaaay")
+    // }
 
      
 
@@ -46,14 +60,11 @@ function Login() {
     <div style={{backgroundImage:`url(${Background})`, display:'flex', flex:1, height:'100vh',backgroundRepeat:'no-repeat', backgroundSize:'cover', justifyContent:'center', alignItems:'center'}}>
         <div style={{backgroundImage:`url(${Logo})`, height:200, width:150, backgroundRepeat:'no-repeat',position:'absolute', top:20}}>
         </div>
-        <h1 style={{position:'absolute', top:100}}>Welcome Back</h1>
+        <h1 style={{position:'absolute', top:100}}>Device Rename</h1>
         <div className='FormBox'>
             <form onSubmit={signIn}>
-                <label className='formLable'> Email
-                    <input type="text" name='username' value={userData.username} onChange={handleChange} className='formInput'/>
-                </label>
-                <label> Password
-                    <input type="password" name='password' value={userData.password } onChange={handleChange}/>
+                <label className='formLable'> Enter New A name
+                    <input type="text" name='alias' value={userData.alias} onChange={handleChange} className='formInput'/>
                 </label>
                 <input type='submit' className='Submit'/>
             </form>
@@ -75,13 +86,11 @@ function Login() {
         }
         </div>
         </div>
-        <div className="Forgot">
-            Forgot Password ? Reset
-        </div>
+    
         
     </div>
     </>
   )
 }
 
-export default Login;
+export default Rename;

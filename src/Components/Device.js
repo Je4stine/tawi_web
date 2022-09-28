@@ -14,9 +14,9 @@ const Device =({Name="Loading..."}) =>{
     <div className='Device1' onClick={()=>{handleClick()}}>
         <div className='deviceContent'>
             
-            <span id='indicator1'></span>
-            <span id='indicator2'></span>
-            <span id='indicator3'></span>
+            <span id='indicator11'></span>
+            <span id='indicator21'></span>
+            <span id='indicator31'></span>
             <div className='nodeId'>
                 <p1> Node ID:</p1>
             </div>

@@ -40,7 +40,7 @@ const TDSCard=({Name="TDS Sensor",
             </div>
             <div style={{backgroundImage:`url(${kind})`, height:50, width:50,  backgroundRepeat:'no-repeat', backgroundSize:'contain',   marginBottom:20}}>
             </div>
-            <div style={{backgroundImage:`url(${thermometer})`, height:50, width:50,  backgroundRepeat:'no-repeat', backgroundSize:'contain',  marginBottom:20}}>
+            <div style={{backgroundImage:`url(${thermometer})`, height:50, width:50,  backgroundRepeat:'no-repeat', backgroundSize:'contain', marginBottom:20}}>
             </div>
         </div>
 

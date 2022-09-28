@@ -5,5 +5,18 @@
     flex-direction: column;
     width: 100%;
    justify-content: center;
+   min-height: 1080px;
 }
 
+.Rename{
+    color: #fff;
+    position: absolute;
+    top:50px;
+    right: 30px;
+}
+.sensorsn{
+    color: #fff;
+    position: absolute;
+    top:80px;
+    right:150px;
+}

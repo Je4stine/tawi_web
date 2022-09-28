@@ -22,15 +22,15 @@
     justify-content: center;
 }
 
-#indicator1{
+#indicator11{
     width: 40px;
     height: 40px;
     border-radius: 20px;
     background-color: #fff;
-    margin-right: 20px;
+    margin-right: 20px; 
 }
 
-#indicator2{
+#indicator21{
     width: 40px;
     height: 40px;
     border-radius: 20px;
@@ -39,7 +39,7 @@
 
     
 }
-#indicator3{
+#indicator31{
     width: 40px;
     height: 40px;
     border-radius: 20px;
