@@ -1,0 +1,18 @@
+{
+  "resourceName": "graphdata",
+  "policyUUID": "d252d103",
+  "bucketName": "tawiedge26e147a1feba4adf9aecaf038be8e2bb",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

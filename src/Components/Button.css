@@ -1,0 +1,15 @@
+.Button{
+    position: absolute;
+    bottom: 10px;
+    width: 70%;
+    height: 40px;
+    background-color: green;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 15%;
+    color: #fff;
+    position: sticky;
+}
+

@@ -1,0 +1,27 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tawiedge-dev-95141-authRole",
+      "UnauthRoleArn": "arn:aws:iam::678832205203:role/amplify-tawiedge-dev-95141-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::678832205203:role/amplify-tawiedge-dev-95141-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-tawiedge-dev-95141-deployment",
+      "UnauthRoleName": "amplify-tawiedge-dev-95141-unauthRole",
+      "StackName": "amplify-tawiedge-dev-95141",
+      "StackId": "arn:aws:cloudformation:us-east-1:678832205203:stack/amplify-tawiedge-dev-95141/b9783230-25d4-11ed-9cf6-12316299bdf1",
+      "AmplifyAppId": "d3ockhe894t5nv"
+    },
+    "categories": {
+      "auth": {
+        "tawiedge388f2e87": {},
+        "true": {}
+      },
+      "storage": {
+        "tawiedge8c6fa873": {
+          "bucketName": "tawi-edge-device-data",
+          "region": "us-east-1"
+        }
+      }
+    }
+  }
+}

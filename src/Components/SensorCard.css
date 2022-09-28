@@ -1,0 +1,132 @@
+.SensorCard{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 78%;
+    align-items: center;
+    background-color:#2A4156 ;
+    margin-top: 40px;
+    border-radius: 20px;
+    align-self: center;
+    box-shadow: 0 0 2px 0;
+    
+}
+
+.mainDiv{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-self: center;
+    margin-top: 20px;
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    
+}
+
+.head {
+    height: 40px;
+    width: 80%;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#indicator1{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: green;
+    margin-right: 20px;
+}
+
+#indicator2{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-right: 20px;
+
+    
+}
+#indicator3{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: orange;
+    margin-right: 20px;
+}
+
+.Indicators{
+    display: flex;
+    flex-direction: row;
+}
+
+.Lables{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.ParamNames{
+    color: #fff;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 10px;
+    
+}
+
+.Holders{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+
+.Holder1{
+    height: 40px;
+    width: 80px;
+    background-color: #fff;
+    border: 3px solid blue;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Holder2{
+    height: 40px;
+    width: 80px;
+    background-color: #fff;
+    border: 3px solid green;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.Holder3{
+    height: 40px;
+    width: 80px;
+    background-color: #fff;
+    border: 3px solid red;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.mainCont{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}

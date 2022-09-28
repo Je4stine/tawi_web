@@ -1,0 +1,36 @@
+.FormBox{
+    position: absolute;
+    top: 200px;
+    flex-direction: column;
+}
+
+.FormBox label{
+ display: block;
+ text-align: center;
+ font-size: 20px;
+ margin: 0 0 2vh 0;
+} 
+
+.FormBox input {
+    display: block;
+    width: 100%;
+    padding: .5rem .8rem .5rem .8rem;
+    margin: .9vw 0;
+    border: 0.1px;
+    border-radius: 5px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.Submit {
+    background-color: green;
+    color: aliceblue;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.Forgot {
+    position: absolute;
+    top: 450px;
+
+}

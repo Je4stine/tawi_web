@@ -1,0 +1,24 @@
+.HeaderContainer{
+    margin: 0;
+    background-color: #2A4156;
+    height: 150px;
+    box-shadow: 0 0 2px 0;
+    top: 0;
+    display: flex;
+  
+
+}
+#Title{
+    color:aliceblue;
+    position: absolute;
+    left: 180px;
+    top: 50px;
+
+}
+
+#Name{
+    position: absolute;
+    right: 180px;
+    top: 50px;
+    color:aliceblue;
+}

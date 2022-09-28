@@ -1,0 +1,9 @@
+.SensorMain{
+    background-color: #192734;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+   justify-content: center;
+}
+
